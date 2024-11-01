@@ -1,0 +1,135 @@
+.viapay-logos {
+  /* display: table-cell; */
+}
+
+.viapay-logo {
+  /* float: left; */
+  /* display: inline-block; */
+  /* padding: 5px; */
+}
+  
+.viapay-admin-section-li-header {
+	width: 100%;
+	font-weight: bold;
+}
+
+.viapay-admin-section-li-header-small {
+	width: 100%;
+	font-weight: bold;
+	font-size: small;
+	margin-bottom: 0px;
+}
+
+.viapay-admin-section-li {
+	width: 100%;
+}
+
+.viapay-admin-section-li-small {
+	width: 100%;
+	font-size: small;
+	margin-top: 0px;
+}
+
+.viapay-full-width, .viapay-full-width .button {
+	width: 100%;
+	display: block;
+	text-align: center;
+	clear: both;
+}
+
+.viapay-balance {
+	margin-bottom: 0;
+}
+
+.viapay-balance.last {
+	margin-bottom: 5px;
+}
+
+.viapay-balance:after {
+	clear: both;
+	content: "";
+	display: table;
+}
+
+.viapay-balance__label,
+.viapay-balance__amount {
+	background-color: #f9f9f9;
+	box-sizing: border-box;
+	float: left;
+	padding: 7px 10px;
+	text-transform: uppercase;
+	font-size: 10px;
+	color: #8a8a8a;
+}
+
+.viapay-balance__label {
+	font-weight: bold;
+	width: 60%;
+	border-right: 2.5px solid #FFF;
+}
+.viapay-balance__amount {
+	border-right: 0;
+	width: 40%;
+	border-left: 2.5px solid #FFF;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+}
+
+.viapay-balance__currency {
+	margin-right: 10px;
+}
+
+.viapay-balance.last .viapay-balance__currency {
+	margin-right: 0;
+}
+
+.viapay-admin-card-logo {
+	text-align: center; 
+	margin-right: 25px;
+	max-width: 100px;
+}
+
+.viapay-partly_capture_amount, .viapay-partly_refund_amount {
+	background-color: #f9f9f9;
+	box-sizing: border-box;
+	float: left;
+	padding: 4px 10px;
+	text-transform: uppercase;
+	font-size: 10px;
+	color: #8a8a8a;
+	
+	border-right: 0;
+	width: 40%;
+	border-left: 2.5px solid #FFF;
+	display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+	display: -ms-flexbox;  /* TWEENER - IE 10 */
+	display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+	display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+}
+
+.viapay-capture_partly_amount-field, .viapay-refund_partly_amount-field {
+	width: 90px;
+	font-size: small;
+	max-height: 20px;
+	min-height: 1px !important;
+	text-align: center; 
+}
+
+#payment .wc_payment_methods li label {
+	display: flex !important;
+	align-items: center;
+
+	.viapay-logos {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 0 0 auto;
+		justify-content: flex-end;
+		max-width: 300px;
+
+		.viapay-logo img {
+			margin: .25rem;
+		}
+	}
+}
